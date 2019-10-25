@@ -13,9 +13,19 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <input type="text" class="form-control" id="sheep-name" placeholder="imię">
-    
-            <button id="szukaj" class="btn btn-primary" type="button">szukaj</button>
+                <input type="text" class="form-control" id="sheep-name" placeholder="imię">
+                <input type="text" class="form-control" id="sheep-color" placeholder="kolor">
+
+                <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="sheep-happy">
+                        <label class="form-check-label" for="sheep-happy">is happy</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="sheep-sweam">
+                    <label class="form-check-label" for="sheep-sweam">can sweam</label>
+                </div>
+        
+                <button id="szukaj" class="btn btn-primary" type="button">szukaj</button>
         </div>
 
         <table class="table">
