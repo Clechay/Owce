@@ -13,19 +13,34 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-                <input type="text" class="form-control" id="sheep-name" placeholder="imię">
-                <input type="text" class="form-control" id="sheep-color" placeholder="kolor">
+            <input type="text" class="form-control" id="sheep-name" placeholder="imię">
+            <input type="text" class="form-control" id="sheep-color" placeholder="kolor">
+            <input type="number" class="form-control" id="sheep-legs-min" placeholder="minimalna liczba nóg">
+            <input type="number" class="form-control" id="sheep-legs-max" placeholder="maksymalna liczba nóg">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="sheep-happy">
+                <label class="form-check-label" for="sheep-happy">is happy</label>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="sheep-sweam">
+                <label class="form-check-label" for="sheep-sweam">can sweam</label>
+            </div>
 
-                <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="sheep-happy">
-                        <label class="form-check-label" for="sheep-happy">is happy</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="sheep-sweam">
-                    <label class="form-check-label" for="sheep-sweam">can sweam</label>
-                </div>
-        
-                <button id="szukaj" class="btn btn-primary" type="button">szukaj</button>
+            <div class="form-group">
+                <label for="sheep-sort">Sortowanie po:</label>
+                <select class="form-control" id="sheep-sort">
+                    <option>name</option>
+                    <option>colors</option>
+                    <option>numberOfLegs</option>
+                    <option>maxSpeed</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="sheep-sort-reverse">
+                <label class="form-check-label" for="sheep-sort-reverse">reverse</label>
+            </div>
+            
+            <button id="szukaj" class="btn btn-primary" type="button">szukaj</button>
         </div>
 
         <table class="table">
